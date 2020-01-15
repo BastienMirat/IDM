@@ -27,21 +27,19 @@ public class TimeDuration {
 		
 		
 	}
-	
-	
 	@Override
-	public void toString() {
-		
-		if(this.h>0) {
-			System.out.println(this.h,"h ",this.min,"m ",this.sec,"s");
-			
-		}else if(this.min>0){
-			System.out.println(this.min,"m ",this.sec,"s");
-		}
-		else {
-			System.out.println(this.sec,"s");
+	public String toString() {
+		if(h>0) {
+			return  h + "h " + min + "m " + sec +"s" ;
+		}else if(min>0) {
+			return  min + "m " + sec +"s" ;
+		}else {
+		return  sec +"s" ;
 		}
 	}
+	
+	
+	
 	
 	
 	

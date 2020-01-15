@@ -5,7 +5,7 @@ public class Main {
 	public static void main(String[] args) throws BadBadValueException {
 		// TODO Auto-generated method stub
 		
-		new TimeDuration(3600).toString();
+		System.out.println(new TimeDuration(732).toString());
 		
 	}
 
