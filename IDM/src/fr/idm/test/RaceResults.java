@@ -5,12 +5,17 @@ import java.util.Map;
 
 public class RaceResults {
 	
-	HashMap<String , TimeDuration> results;
+	private HashMap< TimeDuration,String > results = new HashMap<  TimeDuration ,String>(); 
 	
 	
+	public HashMap returnHashM() {
+		return results;
+	}
 	
 	public void onNewResult(String tag, TimeDuration time) {
-		results.put(tag , time);
+		results.put(time , tag);
+		
+		//System.out.println(results);
 	}
 	
 	public void printResult() {

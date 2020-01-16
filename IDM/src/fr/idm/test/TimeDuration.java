@@ -2,10 +2,11 @@ package fr.idm.test;
 
 public class TimeDuration {
 
-	int time ;
-	int sec=0;
-	int min=0;
-	int h=0;
+	private int time ;
+	private int sec=0;
+	private int min=0;
+	private int h=0;
+	
 	public TimeDuration(int time) throws BadBadValueException {
 		
 		this.time = time;
@@ -26,6 +27,24 @@ public class TimeDuration {
 		
 		
 		
+	}
+	public int getSec() {
+		return sec;
+	}
+	public void setSec(int sec) {
+		this.sec = sec;
+	}
+	public int getMin() {
+		return min;
+	}
+	public void setMin(int min) {
+		this.min = min;
+	}
+	public int getH() {
+		return h;
+	}
+	public void setH(int h) {
+		this.h = h;
 	}
 	@Override
 	public String toString() {
